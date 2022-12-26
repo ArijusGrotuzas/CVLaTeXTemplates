@@ -3,43 +3,36 @@
 
 %%%%%%%%%%%%%%% Formatting %%%%%%%%%%%%%%% 
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{blindtext}
-\usepackage[utf8]{inputenc}		
 \usepackage{geometry} % Margins
-\usepackage{helvet} % Font - Helvetica
-\usepackage{sectsty} % Custom Sections
+\usepackage{fancyhdr} % CUstom headers and footers
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%% 
+\usepackage{Archivo}
+\usepackage[T1]{fontenc}
 
 %%%%%%%%%%%%%%% Graphics %%%%%%%%%%%%%%% 
-\usepackage{fontawesome5} % Icons
-\usepackage{graphicx} % Images
-\usepackage[most]{tcolorbox} % Color Box
+\usepackage[most]{tcolorbox} % Color box
 \usepackage{xcolor} % Colors
-\usepackage{tikz} % For Drawing Shapes
+\usepackage{tikz} % For drawing shapes
 \tcbuselibrary{breakable}
 
-%%%%%%%%%%%%%%% Miscelanous %%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%% Miscellaneous %%%%%%%%%%%%%%% 
+\usepackage{hyperref} % For links
 \usepackage{lipsum} % Lorem Ipsum
-\usepackage{hyperref} % For Hyperlinks
 
-%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%% 
-\definecolor{title}{HTML}{4bfbba}
-\definecolor{backdrop}{HTML}{f2f2f2}
-\definecolor{lightgray}{HTML}{b8b8b8}
+%%%%%%%%%%%%%%% Define colors %%%%%%%%%%%%%%% 
+\definecolor{bar}{HTML}{4bfbba} % Color of the bar at the bottom of the page
 
-%%%%%%%%%%%%%%% Section Format %%%%%%%%%%%%%%% 
-\sectionfont{%                        
-    \LARGE % mLARGE Font
-    \fontfamily{phv}\selectfont % Font family
-    \sectionrule{0pt}{0pt}{-8pt}{1pt} % Rule Under Section Name
-}
-
-%%%%%%%%%%%%%%% Margins and Format %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Margins %%%%%%%%%%%%%%% 
 \geometry{
-  a4paper,
-  left=7mm,
-  right=7mm,
-  bottom=10mm,
-  top=10mm
+	a4paper,
+	left=2cm,
+	right=5cm,
+	bottom=4cm,
+	top=4cm
 }
-\pagestyle{empty} % Empty Headers
+
+%%%%%%%%%%%%%%% Empty headers %%%%%%%%%%%%%%% 
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
