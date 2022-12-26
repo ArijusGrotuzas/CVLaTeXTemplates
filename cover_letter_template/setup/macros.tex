@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%% Title of the Letter %%%%%%%%%%%%%%% 
+\newcommand{\name}[2]{
+    % Name
+    \Huge
+    \raggedright \textbf{#1} \par
+
+    \vspace*{0.3em}
+    
+    % Profession
+    \LARGE
+    \raggedright #2 
+    \normalsize \par \vspace{3em}
+}
+
+%%%%%%%%%%%%%%% Person that Receives the Letter %%%%%%%%%%%%%%% 
+\newcommand{\receiver}[1]{
+    \large
+    \raggedright \textbf{To: #1}
+    \normalsize \par \vspace{1em}
+}
+
+%%%%%%%%%%%%%%% Paragraph of a Letter %%%%%%%%%%%%%%% 
+\newcommand{\para}[1]{
+    \large #1
+    \normalsize \par \vspace{1em}
+}
+
+%%%%%%%%%%%%%%% Bottom of the Letter %%%%%%%%%%%%%%% 
+\newcommand{\bottom}[3]{
+    \fancyfoot{
+        \normalsize
+        \raggedright #1 $\cdot$ #2 $\cdot$ \href{mailto:#3}{\underline{#3}} 
+        
+        \begin{tikzpicture}
+            \fill[title] (0, 0) rectangle (20,0.15);
+        \end{tikzpicture}
+    }
+}
