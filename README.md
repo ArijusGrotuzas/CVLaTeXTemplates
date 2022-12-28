@@ -1,6 +1,6 @@
 # Resume and cover letter LaTeX Templates
 
-Resume/CV and cover letter templates for LaTeX. The templates are built using primarily the `minipage` and `tcolorbox` environments. 
+Resume/CV and cover letter templates for LaTeX. The templates are built using primarily the `minipage` and `tcolorbox` environments. Also available on Overleaf - [Cover Letter Template](https://www.overleaf.com/latex/templates/cover-letter-template/snjpnphwrrjh) and [Modern CV Template](https://www.overleaf.com/latex/templates/modern-cv-template/kmkzxwnmvmqq).
 
 |`CV/Resume Example`|`Cover Letter Example`|
 | :---:| :---:|
